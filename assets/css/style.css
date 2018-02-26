@@ -1,0 +1,250 @@
+/* To add later: fun icons: guitar, dancer, book, microphone
+experiment with fancy underline and hover effects
+*/
+:root {
+    --teal: #4aaaa5;
+    --header-background: #ffffff;
+    --header-border: #cccccc;
+    --footer-background: #666666;
+    --content-background: #ffffff;
+    --content-border: #dddddd;
+    --font-color: #777777;
+    --header-font: 'Georgia', 'Times New Roman', Times, serif;
+    --primary-font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;`
+}
+
+body {
+    background: url('../images/symphony.png'); 
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100%;
+}
+
+nav {
+    position: relative;
+    left: 30%;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+
+h1,
+h2 {
+    font-family: var(--header-font);
+}
+
+h1 {
+    color: var(--header-background);
+}
+
+h2,
+h2.cell {
+    font-size: 28px;
+    color: var(--teal);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: solid #dddddd;
+}
+
+header {
+    background-color: var(--header-background);
+    border-color: var(--header-border);
+    border-width: 10px;
+    font-family: var(--header-font);
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow:0px 2px 6px #000; 
+    -moz-box-shadow:0px 2px 6px #000; 
+    border-radius:1px 1px 4px 4px;
+text-shadow:inset 3px 3px 3px #000;
+}
+
+ul,
+li 
+{
+    list-style-type: none;
+}
+
+ li {
+    float: left;
+    display: block;
+    padding: 8px 20px;    
+}
+
+li:nth-child(-n+2) {
+    border-right: solid #dddddd;
+}
+
+li:hover {
+    background-color: #00FF61;
+}
+
+.about,
+.portfolio,
+.contact {
+    border: solid 1px var(--content-border);
+    width: 590px;
+    padding: 29px;
+    margin: auto;
+    background-color: var(--content-background);
+    border-color: var(--content-border);
+}
+
+.prof-pic,
+.about,
+.contact,
+.portfolio,
+.sidebar {
+    float: left;
+}
+
+main {
+    position: relative;
+    font-family: var(--primary-font);
+}
+
+.sidebar {
+    border: solid 1px var(--content-border);
+    width: 210px;
+    padding: 29px;
+    background-color: var(--content-background);
+    margin-left: 40px;
+}
+
+section.sidebar img { 
+    width: 64px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    border-top: 10px solid var(--teal);
+    background-color: var(--footer-background);
+    clear: both;
+    z-index: 1; /* allows the footer to be above all other elements, default index is 0. */
+    width: 100%; 
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 22px;
+    color: #cccccc;
+}
+
+ul {
+    margin-top: 28px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+color: var(--font-color);
+}
+
+.sidebar h2 {
+    font-size: 20px !important;
+}
+/* exculusive to About page */
+
+.prof-pic {
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+.bio{
+    font-size: 18px;
+}
+
+.cell {
+    margin: auto;
+    font-size: 28px;
+}
+
+div.my-name {
+    background-color: var(--teal);
+    padding: 0 20px;
+    margin-left: 16%;
+    margin-right: 11%;
+}
+
+.footer-about {
+    position: absolute !important;
+}
+/* exclusive to Contact page */
+form {
+    color: var(--font-color);
+}
+label {
+    margin-left: 10px;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 15px;
+}
+textarea[name=message], select {
+    width: 90%;
+    margin: 15px;
+}
+input[type=submit], select {
+    background-color: var(--teal);
+    padding: 15px 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.contact {
+    margin-bottom: 30px;
+}
+/* exclusive to Portfolio page */
+.image-container{
+    float: left;
+    padding: 0 20px 20px 0; 
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.bottom-center {
+    position: absolute;
+    width: 70%;
+    bottom: 10%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background: #666666;   
+}
+
+.portfolio img {
+    width: 270px;
+   
+}
+
+.portfolio {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 980px) {
+.prof-pic {
+    float: none;
+}
+footer {
+    position: relative;
+    bottom: 0px;
+
+}
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 640px) {
+
+
+}
